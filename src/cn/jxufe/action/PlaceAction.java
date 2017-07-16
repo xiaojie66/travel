@@ -1,4 +1,4 @@
-package cn.jxufe.action;
+﻿package cn.jxufe.action;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -156,6 +156,7 @@ public class PlaceAction extends ActionSupport implements ModelDriven<Place> {
 		out.print(json);
 	}
 
+        // 返回Json数据
 	private void writeJson(JSONObject json) throws IOException {
 		HttpServletResponse response = ServletActionContext.getResponse();
 		response.setCharacterEncoding("utf-8");

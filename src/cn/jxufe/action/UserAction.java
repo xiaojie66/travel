@@ -1,4 +1,4 @@
-package cn.jxufe.action;
+﻿package cn.jxufe.action;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -148,6 +148,7 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 		userService.changeAvatar(user,avatar);
 	}
 
+        // 返回Json数据
 	private void writeJson(String status, String data) throws IOException {
 		HttpServletResponse response = ServletActionContext.getResponse();
 		response.setCharacterEncoding("utf-8");
