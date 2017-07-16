@@ -1,4 +1,4 @@
-package cn.jxufe.interceptor;
+﻿package cn.jxufe.interceptor;
 
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
@@ -9,7 +9,6 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 
-// sessionUser
 public class LoginInterceptor extends AbstractInterceptor {
 
 	private static final long serialVersionUID = 1L;
