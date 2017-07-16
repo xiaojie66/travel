@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<!-- 设置文件最大上传:1M -->
+	<constant name="struts.multipart.maxSize" value="1024000" />
+	<!-- 指定被struts2处理的请求后缀类型，多个用逗号隔开 -->
+	<constant name="struts.action.extension" value="," />
+
+	<constant name="struts.configuration.classpath.defaultParentPackage" value="travel" /> 
+ 
+	<package name="travel" namespace="/" extends="struts-default">
+<!-- 		<interceptors>
+			<interceptor name="loginInterceptor" class="cn.jxufe.interceptor.LoginInterceptor" />
+			<interceptor-stack name="travelInterceptor">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="loginInterceptor" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="travelInterceptor" /> -->
+	</package>
+
+</struts>    
