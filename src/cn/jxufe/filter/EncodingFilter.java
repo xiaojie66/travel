@@ -16,7 +16,6 @@ public class EncodingFilter implements Filter {
 	private String encoding = "UTF-8";
 
 	public void destroy() {
-		// TODO Auto-generated method stub
 
 	}
 
@@ -30,7 +29,6 @@ public class EncodingFilter implements Filter {
 	}
 
 	public void init(FilterConfig filterConfig) throws ServletException {
-		// TODO Auto-generated method stub
 
 	}
 
