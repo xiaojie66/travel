@@ -1,4 +1,4 @@
-package cn.jxufe.action;
+﻿package cn.jxufe.action;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -56,6 +56,7 @@ public class OrderAction extends ActionSupport implements ModelDriven<Order>{
 		return "self";
 	}
 
+	// 返回Json数据
 	private void writeJson(String status, String data) throws IOException {
 		HttpServletResponse response = ServletActionContext.getResponse();
 		response.setCharacterEncoding("utf-8");
